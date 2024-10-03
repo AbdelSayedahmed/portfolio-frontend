@@ -10,11 +10,9 @@ export default function Nav() {
         <p>- unknown</p>
       </div>
       <div className="flex gap-5">
-        <button className="border border-white py-1 px-2">Home</button>
-        <button className="border border-white py-1 px-2">Projects</button>
-        <button className="border border-white py-1 px-2">button</button>
-        <button className="border border-white py-1 px-2">button</button>
-        <button className="border border-white py-1 px-2">button</button>
+        <Link to="/">Home</Link>
+        <Link to="/Contact">Contact</Link>
+        <Link to="/Projects">Projects</Link>
       </div>
     </div>
   );
