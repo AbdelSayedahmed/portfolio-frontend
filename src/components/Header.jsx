@@ -30,7 +30,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <hr class="h-[5px] bg-orange-500 border-0" /> 
+      <hr className="h-[5px] bg-orange-500 border-0" /> 
     </div>
   );
 }
