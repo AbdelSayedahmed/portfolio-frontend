@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <div className="bg-black text-white text-center flex flex-col justify-around items-center p-10 px-40 gap-5 h-auto bg-[url('/mountain-range.png')] bg-[50%_auto] bg-no-repeat bg-bottom">
       <div>
-        <img src="./logo.png" alt="logo" />
+        <img src="./Logo.png" alt="Abdels logo" />
         <p>Practice beats talents</p>
         <p>- unknown</p>
       </div>
