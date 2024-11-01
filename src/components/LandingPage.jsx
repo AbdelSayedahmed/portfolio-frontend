@@ -3,16 +3,31 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
   return (
-    <div className="bg-black text-white text-center flex flex-col justify-around items-center p-10 px-40 gap-5 h-auto bg-[url('/mountain-range.png')] bg-[50%_auto] bg-no-repeat bg-bottom">
+    <div className="bg-black text-white flex flex-col justify-around items-center min-h-screen bg-[url('/mountain-range.png')] bg-[70%_auto] bg-no-repeat bg-center">
+      <img src="./Logo.png" alt="Abdels logo" />
       <div>
-        <img src="./Logo.png" alt="Abdels logo" />
         <p>Practice beats talents</p>
         <p>- unknown</p>
       </div>
       <div className="flex gap-5">
-        <Link to="/">Home</Link>
-        <Link to="/Contact">Contact</Link>
-        <Link to="/Projects">Projects</Link>
+        <Link
+          to="/Home"
+          className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
+        >
+          Home
+        </Link>
+        <Link
+          to="/Contact"
+          className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
+        >
+          Contact
+        </Link>
+        <Link
+          to="/Projects"
+          className="border border-[1px] px-[20px] py-[5px]  hover:bg-white hover:bg-opacity-50"
+        >
+          Projects
+        </Link>
       </div>
     </div>
   );
