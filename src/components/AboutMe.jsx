@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Home() {
+export default function AboutMe() {
   return (
     <div>
       <section className="bg-[#c3c3c3] flex flex-col items-center">
@@ -65,6 +65,15 @@ export default function Home() {
             within the overall system. This hands-on experience not only brings
             me joy but also fuels my curiosity and appreciation for technology.
           </p>
+        </div>
+      </section>
+      <hr className="w-full h-[5px] bg-orange-500 border-0" />
+      <section>
+        <div className="py-20 flex justify-center items-center">
+          <h2 className="text-2xl mb-5 font-bold">Skills</h2>
+          <ul>
+            
+          </ul>
         </div>
       </section>
     </div>

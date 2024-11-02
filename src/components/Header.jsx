@@ -11,16 +11,10 @@ export default function Header() {
         </Link>
         <div className="flex items-center gap-5">
           <Link
-            to="/Home"
+            to="/AboutMe"
             className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
           >
-            Home
-          </Link>
-          <Link
-            to="/Contact"
-            className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
-          >
-            Contact
+            About Me
           </Link>
           <Link
             to="/Projects"
@@ -30,7 +24,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <hr className="h-[5px] bg-orange-500 border-0" /> 
+      <hr className="h-[5px] bg-orange-500 border-0" />
     </div>
   );
 }

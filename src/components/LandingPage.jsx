@@ -15,16 +15,10 @@ export default function LandingPage() {
       </div>
       <div className="flex gap-5 text-[24px] mt-[10%]">
         <Link
-          to="/Home"
+          to="/AboutMe"
           className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
         >
-          Home
-        </Link>
-        <Link
-          to="/Contact"
-          className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
-        >
-          Contact
+          About Me
         </Link>
         <Link
           to="/Projects"
