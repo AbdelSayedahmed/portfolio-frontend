@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getSkills } from "../functions";
 
 export default function AboutMe() {
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    const fetchSkills = async () => {
+      try {
+        const data = await getSkills();
+        setSkills(data);
+      } catch (error) {
+        console.error("Failed to fetch skills:", error);
+      }
+    };
+
+    fetchSkills();
+  }, []);
+
   return (
     <div>
       <section className="bg-[#c3c3c3] flex flex-col items-center">
@@ -68,12 +84,26 @@ export default function AboutMe() {
         </div>
       </section>
       <hr className="w-full h-[5px] bg-orange-500 border-0" />
-      <section>
-        <div className="py-20 flex justify-center items-center">
+      <section className="flex items-center justify-center">
+        <div className="w-[65%] py-20 flex flex-col justify-center items-center">
           <h2 className="text-2xl mb-5 font-bold">Skills</h2>
-          <ul>
-            
-          </ul>
+          <div className="flex flex-wrap gap-4 items-center justify-center">
+            {skills.map((skill) => (
+              <div
+                key={skill.id}
+                className="flex w-max items-center broder border-2 border-[orange] rounded-lg px-[20px] py-[5px] text-[18px] font-semibold"
+              >
+                {
+                  <img
+                    src={skill.icon}
+                    alt={`${skill.name}'s icon`}
+                    className="w-6 h-6 mr-2"
+                  />
+                }
+                {skill.name}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
