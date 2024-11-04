@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
 export default function Header() {
   return (
@@ -9,20 +10,7 @@ export default function Header() {
           <h4 className="text-[22px]">Abdelrahman Sayedahmed</h4>
           <h6>-Software Developer-</h6>
         </Link>
-        <div className="flex items-center gap-5">
-          <Link
-            to="/AboutMe"
-            className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
-          >
-            About Me
-          </Link>
-          <Link
-            to="/Projects"
-            className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
-          >
-            Projects
-          </Link>
-        </div>
+        <Menu />
       </div>
       <hr className="h-[5px] bg-orange-500 border-0" />
     </div>

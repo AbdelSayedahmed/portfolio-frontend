@@ -1,11 +1,12 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
-import AboutMe from "./components/AboutMe.jsx";
 import LandingPage from "./components/LandingPage.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function App() {
   const location = useLocation();
@@ -17,6 +18,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/Projects" element={<Projects />} />
         </Routes>
       </div>

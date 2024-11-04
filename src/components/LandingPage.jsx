@@ -1,5 +1,6 @@
+// LandingPage.js
 import React from "react";
-import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
 export default function LandingPage() {
   return (
@@ -13,19 +14,8 @@ export default function LandingPage() {
           - unknown
         </p>
       </div>
-      <div className="flex gap-5 text-[24px] mt-[10%]">
-        <Link
-          to="/AboutMe"
-          className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
-        >
-          About Me
-        </Link>
-        <Link
-          to="/Projects"
-          className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
-        >
-          Projects
-        </Link>
+      <div className="mt-[10%]">
+        <Menu />
       </div>
     </div>
   );

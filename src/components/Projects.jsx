@@ -17,16 +17,16 @@ export default function Projects() {
     fetchProjects();
   }, []);
 
-  {
-    backend_link: "https://github.com/ayoublos/Recipe-Project-BackEnd";
-    created_at: "2024-11-03T21:31:55.998Z";
-    deployed_link: "https://culinarycompass.netlify.app/";
-    description: "Culinary Compass is a web application designed to provide an extensive collection of recipes from around the world. Users can browse, contribute, and edit recipes while engaging with a community of food enthusiasts.";
-    frontend_link: "https://github.com/AbdelSayedahmed/AbdelSayedahmed-Recipe-Project-FrontEnd";
-    id: 1;
-    image_url: "https://culinarycompass.netlify.app/app-logos/culinary-compass-logo.png";
-    name: "Recipe Project";
-    updated_at: "2024-11-03T21:31:55.998Z";
+  const samlpleProject = {
+    backend_link: "https://github.com/ayoublos/Recipe-Project-BackEnd",
+    created_at: "2024-11-03T21:31:55.998Z",
+    deployed_link: "https://culinarycompass.netlify.app/",
+    description: "Culinary Compass is a web application designed to provide an extensive collection of recipes from around the world. Users can browse, contribute, and edit recipes while engaging with a community of food enthusiasts.",
+    frontend_link: "https://github.com/AbdelSayedahmed/AbdelSayedahmed-Recipe-Project-FrontEnd",
+    id: 1,
+    image_url: "https://culinarycompass.netlify.app/app-logos/culinary-compass-logo.png",
+    name: "Recipe Project",
+    updated_at: "2024-11-03T21:31:55.998Z",
   }
 
   return (
