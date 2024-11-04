@@ -1,4 +1,3 @@
-// LandingPage.js
 import React from "react";
 import Menu from "./Menu";
 
@@ -14,9 +13,7 @@ export default function LandingPage() {
           - unknown
         </p>
       </div>
-      <div className="mt-[10%]">
-        <Menu />
-      </div>
+      <Menu styling={"flex gap-5 text-[24px] mt-[10%]"} />
     </div>
   );
 }

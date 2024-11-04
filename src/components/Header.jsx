@@ -10,7 +10,7 @@ export default function Header() {
           <h4 className="text-[22px]">Abdelrahman Sayedahmed</h4>
           <h6>-Software Developer-</h6>
         </Link>
-        <Menu />
+        <Menu styling={"flex items-center gap-5"} />
       </div>
       <hr className="h-[5px] bg-orange-500 border-0" />
     </div>
