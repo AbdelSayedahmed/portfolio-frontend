@@ -91,7 +91,7 @@ export default function AboutMe() {
             {skills.map((skill) => (
               <div
                 key={skill.id}
-                className="flex w-max items-center broder border-2 border-[orange] rounded-lg px-[20px] py-[5px] text-[18px] font-semibold"
+                className="flex w-max items-center border border-2 border-[orange] rounded-lg px-[20px] py-[5px] text-[18px] font-semibold"
               >
                 {
                   <img
