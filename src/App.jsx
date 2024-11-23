@@ -5,6 +5,7 @@ import Header from "./components/Header.jsx";
 import LandingPage from "./components/LandingPage.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import Projects from "./components/Projects.jsx";
+import ProjectDetails from "./components/ProjectDetails.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -17,9 +18,10 @@ export default function App() {
       <div className="flex-grow">
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/AboutMe" element={<AboutMe />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Projects" element={<Projects />} />
+          <Route path="/aboutMe" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
         </Routes>
       </div>
       {location.pathname !== "/" && <Footer />}
