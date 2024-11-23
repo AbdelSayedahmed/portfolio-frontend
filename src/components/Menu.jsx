@@ -17,10 +17,10 @@ export default function Menu({ styling }) {
         Projects
       </Link>
       <Link
-        to="/Contacts"
+        to="/Contact"
         className="border border-[1px] px-[20px] py-[5px] hover:bg-white hover:bg-opacity-50"
       >
-        Contacts
+        Contact Me
       </Link>
     </div>
   );
