@@ -12,4 +12,10 @@ const getSkills = async () => {
   return data;
 };
 
-export { getProjects, getSkills };
+const getProject = async (id) => {
+  const response = await fetch(`${URL}/data/projects/${id}`);
+  const data = await response.json();
+  return data;
+};
+
+export { getProjects, getSkills, getProject };
