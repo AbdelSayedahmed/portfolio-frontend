@@ -45,7 +45,7 @@ export default function Contact() {
               to="https://profile-file-service-temp-prod.s3.us-west-2.amazonaws.com/1219208729_000d879c-b887-4e3b-81ef-eba6f7b29f13?response-content-disposition=attachment%3Bfilename%3DAbdelrahman-Sayedahmed.pdf&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20241122T173202Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAZKXXDXTXZF2KYWCD%2F20241122%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Expires=300&X-Amz-Signature=84d117bac0686d1f5d87ada5d11f7c53e4dc58940a078a08f395c24d4752aa3e"
               className="border border-black border-2 rounded-[12px] px-[10px] py-[2px]"
             >
-              <i class="bi bi-download"></i> Download
+              <i className="bi bi-download"></i> Download
             </Link>
           </p>
           <p>
