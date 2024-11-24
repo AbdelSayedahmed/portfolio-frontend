@@ -49,13 +49,13 @@ export default function Contact() {
             </Link>
           </p>
           <p>
-            <strong>Leetcode Profile</strong>{" "}
+            <strong>Leetcode Profile:</strong>{" "}
             <Link to="https://leetcode.com/u/abdelsayedahmed/" target="_blank">
               @abdelsayedahmed
             </Link>
           </p>
           <p>
-            <strong>Codewars Profile</strong>{" "}
+            <strong>Codewars Profile:</strong>{" "}
             <Link
               to="https://www.codewars.com/users/abdelsayedahmed"
               target="_blank"
