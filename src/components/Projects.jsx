@@ -47,10 +47,10 @@ export default function Projects() {
             className="w-[300px] h-[300px] p-4"
           >
             <img
-              src={project.image_url}
-              alt={project.name}
-              className="w-full h-full"
-            />
+            src={project.image_url}
+            alt={project.name}
+            className="object-contain mx-auto rounded-md shadow-md"
+          />
           </Link>
         ))}
       </div>
