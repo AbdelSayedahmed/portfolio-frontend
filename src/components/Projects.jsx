@@ -19,21 +19,47 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center p-4">
-      <h1 className="text-[36px] font-bold">Projects</h1>
-      <div className="flex flex-wrap justify-center items-center gap-4">
+    <div className="p-8 bg-gray-50 min-h-screen">
+      <h1 className="text-[36px] font-bold text-center mb-8 text-gray-800">
+        Projects
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
-          <Link
-            to={`/projects/${project.id}`}
+          <div
+            className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             key={project.id}
-            className="w-[300px] h-[300px] p-4"
           >
-            <img
-              src={project.imageUrl}
-              alt={project.name}
-              className="object-contain mx-auto rounded-md shadow-md"
-            />
-          </Link>
+            <Link to={`/projects/${project.id}`}>
+              <img
+                src={project.imageUrl}
+                alt={project.name}
+                className="rounded-t-lg w-full h-48 object-cover"
+              />
+            </Link>
+            <div className="p-4">
+              <h2 className="text-lg font-semibold text-gray-900">
+                {project.name}
+              </h2>
+              <p className="text-sm text-gray-600 mb-4">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {project.skillSet.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className={`flex items-center gap-2 px-3 py-1 rounded-full shadow-sm text-sm font-medium ${skill.color}`}
+                  >
+                    <img
+                      src={skill.icon}
+                      alt={`${skill.name} icon`}
+                      className="w-5 h-5"
+                    />
+                    {skill.name}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         ))}
       </div>
     </div>

@@ -48,7 +48,7 @@ export default function AboutMe() {
               a difference.
             </p>
             <img
-              className="w-[40%] rounded-[12px]"
+              className="w-[40%] h-[40%] rounded-[12px]"
               src="./images/headshot.png"
               alt="Abdel's headshot"
             />
