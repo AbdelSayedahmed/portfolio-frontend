@@ -32,7 +32,7 @@ export default function ProjectDetails() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center">
           <img
-            src={project.image_url}
+            src={project.imageUrl}
             alt={project.name}
             className="w-72 h-72 object-contain mx-auto rounded-md shadow-md"
           />
