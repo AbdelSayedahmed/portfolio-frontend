@@ -88,9 +88,9 @@ export default function AboutMe() {
         <div className="w-[65%] py-20 flex flex-col justify-center items-center">
           <h2 className="text-2xl mb-5 font-bold">Skills</h2>
           <div className="flex flex-wrap gap-4 items-center justify-center">
-            {skills.map((skill) => (
+            {skills.map((skill, index) => (
               <div
-                key={skill.id}
+                key={index}
                 className="flex w-max items-center border border-2 border-[orange] rounded-lg px-[20px] py-[5px] text-[18px] font-semibold"
               >
                 {
