@@ -49,14 +49,14 @@ export default function AboutMe() {
             </p>
             <img
               className="w-[40%] h-[40%] rounded-[12px]"
-              src="./public/images/headshot.png"
+              src="/images/headshot.png"
               alt="Abdel's headshot"
             />
           </div>
         </div>
       </section>
       <hr className="w-full h-[5px] bg-orange-500 border-0" />
-      <section className="bg-[url('./public/images/my-car.png')] bg-no-repeat bg-center bg-cover flex flex-col items-center">
+      <section className="bg-[url('/images/my-car.png')] bg-no-repeat bg-center bg-cover flex flex-col items-center">
         <div className="w-[65%] py-20 text-white">
           <h2 className="text-2xl mb-5 font-bold">Beyond Coding</h2>
           <p className="bg-black bg-opacity-70 rounded-[12px] p-5">
