@@ -20,10 +20,10 @@ export default function AboutMe() {
   return (
     <div>
       <section className="bg-[#c3c3c3] flex flex-col items-center">
-        <div className="w-[65%] py-20">
+        <div className="lg:w-[65%] lg:py-20 w-[90%] py-3">
           <h2 className="text-2xl mb-5 font-bold">About Me</h2>
-          <div className="flex gap-4 font-medium">
-            <p className="w-[55%]">
+          <div className="flex flex-col gap-4 font-medium lg:flex-row">
+            <p className="lg:w-[55%]">
               I'm Abdelrahman Sayedahmed, a full-stack software developer with a
               passion for building impactful web applications. My journey into
               coding began in high school, where an inspiring robotics class
@@ -48,7 +48,7 @@ export default function AboutMe() {
               a difference.
             </p>
             <img
-              className="w-[40%] h-[40%] rounded-[12px]"
+              className="lg:w-[40%] lg:h-[40%] rounded-[12px]"
               src="/images/headshot.png"
               alt="Abdel's headshot"
             />
@@ -57,7 +57,7 @@ export default function AboutMe() {
       </section>
       <hr className="w-full h-[5px] bg-orange-500 border-0" />
       <section className="bg-[url('/images/my-car.png')] bg-no-repeat bg-center bg-cover flex flex-col items-center">
-        <div className="w-[65%] py-20 text-white">
+        <div className="lg:w-[65%] lg:py-20 w-[90%] py-5 text-white">
           <h2 className="text-2xl mb-5 font-bold">Beyond Coding</h2>
           <p className="bg-black bg-opacity-70 rounded-[12px] p-5">
             Outside of programming, I have a passion for working on my car. I
@@ -85,21 +85,21 @@ export default function AboutMe() {
       </section>
       <hr className="w-full h-[5px] bg-orange-500 border-0" />
       <section className="flex items-center justify-center">
-        <div className="w-[65%] py-20 flex flex-col justify-center items-center">
-          <h2 className="text-2xl mb-5 font-bold">Skills</h2>
+        <div className="w-full sm:w-[65%] py-10 px-4">
+          <h2 className="text-xl sm:text-2xl mb-5 font-bold text-center sm:text-left">
+            Skills
+          </h2>
           <div className="flex flex-wrap gap-4 items-center justify-center">
             {skills.map((skill, index) => (
               <div
                 key={index}
-                className="flex w-max items-center border border-2 border-[orange] rounded-lg px-[20px] py-[5px] text-[18px] font-semibold"
+                className="flex w-auto items-center border border-2 border-[orange] rounded-lg px-3 sm:px-[20px] py-[5px] text-[14px] sm:text-[18px] font-semibold"
               >
-                {
-                  <img
-                    src={skill.icon}
-                    alt={`${skill.name}'s icon`}
-                    className="w-6 h-6 mr-2"
-                  />
-                }
+                <img
+                  src={skill.icon}
+                  alt={`${skill.name}'s icon`}
+                  className="w-5 h-5 mr-2"
+                />
                 {skill.name}
               </div>
             ))}

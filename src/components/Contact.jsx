@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
-    <div className="flex justify-center items-center bg-gradient-to-br from-orange-200 to-red-300 min-h-[calc(100vh-252px)]">
-      <div className="w-max h-max flex flex-col justify-center items-center border border-gray-300 rounded-[24px] p-8 shadow-lg bg-white">
-        <h1 className="text-[36px] font-semibold mb-4 text-gray-800">
+    <div className="flex justify-center items-center bg-gradient-to-br from-orange-200 to-red-300 min-h-[calc(100vh-252px)] p-4 sm:p-8">
+      <div className="w-full sm:w-[80%] lg:w-[60%] h-max flex flex-col justify-center items-center border border-gray-300 rounded-[24px] p-4 sm:p-8 shadow-lg bg-white">
+        <h1 className="text-[24px] sm:text-[36px] font-semibold mb-4 text-gray-800">
           Contact Me
         </h1>
-        <div className="flex flex-col gap-4 p-5 text-[18px] text-gray-700">
+        <div className="flex flex-col gap-4 text-[16px] sm:text-[18px] text-gray-700">
           <p className="flex items-center gap-2">
             <i className="bi bi-envelope-at text-blue-500 text-[24px]"></i>{" "}
             <strong>Email Me:</strong>{" "}
