@@ -86,7 +86,7 @@ export default function AboutMe() {
       <hr className="w-full h-[5px] bg-orange-500 border-0" />
       <section className="flex items-center justify-center">
         <div className="w-full sm:w-[65%] py-10 px-4">
-          <h2 className="text-xl sm:text-2xl mb-5 font-bold text-center sm:text-left">
+          <h2 className="text-xl sm:text-2xl mb-5 font-bold text-center">
             Skills
           </h2>
           <div className="flex flex-wrap gap-4 items-center justify-center">

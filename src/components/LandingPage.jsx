@@ -8,7 +8,7 @@ export default function LandingPage() {
       <img
         src=" /images/logo.png"
         alt="Abdel's logo"
-        className="lg:mt-[5%] w-[80%] mt-20 lg:w-[65%]"
+        className="w-[80%] mt-20 lg:w-[50%]"
       />
       <div className="text-[30px] text-center font-semibold mt-[10%] px-4">
         <p className="bg-white bg-opacity-20 px-[5px]">
