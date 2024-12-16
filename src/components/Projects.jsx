@@ -140,7 +140,7 @@ export default function Projects() {
           ))}
         </div>
       ) : (
-        <p className="text-center text-gray-500">No projects available yet.</p>
+        <p className="text-center text-gray-500">Loading...</p>
       )}
     </div>
   );

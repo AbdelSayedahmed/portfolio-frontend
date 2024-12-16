@@ -90,19 +90,25 @@ export default function AboutMe() {
             Skills
           </h2>
           <div className="flex flex-wrap gap-4 items-center justify-center">
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="flex w-auto items-center border border-2 border-[orange] rounded-lg px-3 sm:px-[20px] py-[5px] text-[14px] sm:text-[18px] font-semibold"
-              >
-                <img
-                  src={skill.icon}
-                  alt={`${skill.name}'s icon`}
-                  className="w-5 h-5 mr-2"
-                />
-                {skill.name}
+            {skills.length === 0 ? (
+              <div className="flex justify-center items-center text-xl font-semibold text-gray-500">
+                Skills loading...
               </div>
-            ))}
+            ) : (
+              skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className="flex w-auto items-center border border-2 border-[orange] rounded-lg px-3 sm:px-[20px] py-[5px] text-[14px] sm:text-[18px] font-semibold"
+                >
+                  <img
+                    src={skill.icon}
+                    alt={`${skill.name}'s icon`}
+                    className="w-5 h-5 mr-2"
+                  />
+                  {skill.name}
+                </div>
+              ))
+            )}
           </div>
         </div>
       </section>
